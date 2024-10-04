@@ -14,12 +14,16 @@ import logo from '@/assets/img/logo.png'
                     </a>
                     <div class="md:ml-auto">
                         <div class="flex space-x-2">
-                            <a href="/"
-                                class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">Home</a>
-                            <a href="/jobs"
-                                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2">Jobs</a>
-                            <a href="/jobs/add"
-                                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2">Add Job</a>
+                            <RouterLink to="/" active-class="bg-green-900"
+                                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2">
+                                Home
+                            </RouterLink>
+                            <RouterLink to="/jobs" active-class=" bg-green-900"
+                                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2">Jobs
+                            </RouterLink>
+                            <RouterLink to="/jobs/add" active-class=" bg-green-900"
+                                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2">Add Job
+                            </RouterLink>
                         </div>
                     </div>
                 </div>
