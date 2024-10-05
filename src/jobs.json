@@ -83,34 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "1aaa",
-      "title": "Abhishek Bhagat",
-      "type": "Full-Time",
-      "location": "dasdasd",
-      "description": "dsada",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "SELF",
-        "description": "ddasdsa",
-        "contactEmail": "inst.abhishek@gmail.com",
-        "contactPhone": "06295970798"
-      }
-    },
-    {
-      "id": "eff2",
-      "title": "Super Dev Job",
-      "type": "Full-Time",
-      "location": "Delhi",
-      "description": "lorem ads dsadopadad dasojdnaskdnlk",
-      "salary": "$50K - $60K",
-      "company": {
-        "name": "Maya Tech",
-        "description": "lorem lsad addasdk sdlorm  loerem ",
-        "contactEmail": "as@sa.co",
-        "contactPhone": "789656454654"
-      }
     }
   ]
 }
