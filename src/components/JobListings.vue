@@ -1,5 +1,6 @@
 <script setup>
 import JobListing from './JobListing.vue'
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 import { ref, defineProps, onMounted, reactive } from 'vue'
 import axios from 'axios';
 
@@ -36,7 +37,13 @@ onMounted(async () => {
                 Browse Jobs
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Show loading spinner while loading -->
+            <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
+                <PulseLoader />
+            </div>
+
+            <!-- Show jobs listing when done loading -->
+            <div v-else class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <JobListing v-for="job in state.jobs.slice(0, limit || state.jobs.length)" :key="job.id" :job="job" />
 
